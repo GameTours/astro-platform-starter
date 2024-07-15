@@ -1,5 +1,5 @@
 ---
-
+const pageTitle = 'About Me';
 ---
 
 <html lang="en">
@@ -8,10 +8,10 @@
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>About | jtyoung.me</title>
+        <title>{pageTitle}</title>
     </head>
     <body>
-        <h1>About Me</h1>
+        <h1>About Me :)</h1>
         <h2>Photographer, engineer, and other stuff sometimes...</h2>
 
         <p>Welcome to my site, I'm glad you've come to have a look!</p>
@@ -24,5 +24,12 @@
         <a href="/about/">About page</a>
         <a href="/blog/">Blog section</a>
         <a href="/construction/">How the site was made</a>
+
+        <style>
+            h1 {
+                color: blue;
+                font-size: 4rem;
+            }
+        </style>
     </body>
 </html>
