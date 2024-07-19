@@ -3,6 +3,7 @@ const pageTitle = 'About Me';
 
 import '../styles/global.css';
 import Navigation from '../components/navigation.astro';
+import Header from '../components/header.astro';
 ---
 
 <html lang="en">
@@ -14,13 +15,12 @@ import Navigation from '../components/navigation.astro';
         <title>{pageTitle}</title>
     </head>
     <body>
+        <Header />
         <h1>About Me :)</h1>
         <h2>Photographer, engineer, and other stuff sometimes...</h2>
 
         <p>Welcome to my site, I'm glad you've come to have a look!</p>
         <p>Take a look around, and see what you find :)</p>
-
-        <Navigation />
 
         <style>
             h1 {

@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Navigation from '../components/navigation.astro';
+import Header from '../components/header.astro';
 ---
 
 <html lang="en">
@@ -13,6 +14,7 @@ import Navigation from '../components/navigation.astro';
     </head>
 
     <body>
+        <Header />
         <h1>Blog!</h1>
         <h2>This is my personal blog, where I will document what I do.</h2>
         <h2>I hope to update this regularly!!</h2>
@@ -25,8 +27,6 @@ import Navigation from '../components/navigation.astro';
             <li><a href="/posts/post-2/">Post 2</a></li>
             <li><a href="/posts/post-3/">Post 3</a></li>
         </ul>
-
-        <Navigation />
     </body>
 </html>
 
