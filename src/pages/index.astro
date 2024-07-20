@@ -1,23 +1,19 @@
 ---
-import '../styles/global.css';
-import Navigation from '../components/navigation.astro';
-import Footer from '../components/footer.astro';
+import BaseLayout from "../layouts/BaseLayout.astro";
+import Hero from "../components/landing/Hero.astro";
+import Intro from "../components/landing/Intro.astro";
+import Projects from "../components/landing/Projects.astro";
+import Testimonials from "../components/landing/Testimonials.astro";
+import FeaturedWork from "../components/landing/FeaturedWork.astro";
+
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Joe Young | jtyoung.me</title>
-	</head>
-	<body>
-		<h1>My Astro site - jtyoung.me!!</h1>
-		<Navigation />
 
-		<p>Welcome to my website.</p>
+<BaseLayout>
+  <Hero />
+  <Intro />
 
-		<Footer />
-	</body>
-</html>
+  <Projects />
+  <Testimonials />
+  <FeaturedWork />
+</BaseLayout>
