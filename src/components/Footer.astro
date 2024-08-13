@@ -1,0 +1,34 @@
+---
+const today = new Date();
+---
+
+<footer>
+	Made in the UK with love ❤️
+	<br>
+	&copy; {today.getFullYear()} | jtyoung.me All rights reserved.
+	<br><br>All photos seen on this site are not for re-use. <a href="/licencing">View licencing information here.</a>
+</footer>
+<style>
+	footer {
+		padding: 2em 1em 6em 1em;
+		background: rgb(251, 243, 255);
+		color: rgb(var(--gray));
+		text-align: center;
+		margin-top: auto;
+		/* box-shadow: 0 -3px 10px 3px rgba(0, 0, 0, 0.2); */
+		box-shadow: 0 -8px 8px rgba(var(--black), 5%);
+	}
+	.social-links {
+		display: flex;
+		justify-content: center;
+		gap: 1em;
+		margin-top: 1em;
+	}
+	.social-links a {
+		text-decoration: none;
+		color: rgb(var(--gray));
+	}
+	.social-links a:hover {
+		color: rgb(var(--gray-dark));
+	}
+</style>
