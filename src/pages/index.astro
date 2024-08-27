@@ -17,16 +17,19 @@ const PageTitle = "Joe Young | jtyoung.me";
 			<div class="indextitle">
 			<h1>Hello.</h1>
 				</div>
-			<h2><br>
+			<h2>
 				Nice to see you here.
-				<br><br>
+				</h2>
+				<h2>
 				I do things...
-				<br>
 			</h2>
-			<div class="gridofimagesindex">
-				<p>This section is reserved for a 3x1 grid of three images that I will use to showcase my work.</p>
-				
+			<br>
+			<div class="parent">
+				<p>Hello1</p>
+				<p>Hello2</p>
+				<p>Hello3</p>
 			</div>
+			<br>
 			<div class="indexlinks">
 				<p>Will be the links section:<br>Keep the same as the 3x1 image grid but use links instead. </p>
 				<a href="">Links section ....</a>
@@ -36,11 +39,22 @@ const PageTitle = "Joe Young | jtyoung.me";
 		<style>
 			h2 {
 				font-size: 28px;
-				font-weight: 500
+				font-weight: 500;
+				margin-top: 20px;
+				margin-bottom: 20px;
 			}
 			.indextitle {
 				..
 			}
+
+			.parent {
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-template-rows: 1fr;
+			grid-column-gap: 10px;
+			grid-row-gap: 0px;
+			}
+
 		</style>
 	</body>
 </html>
